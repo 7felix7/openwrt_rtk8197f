@@ -1,0 +1,1723 @@
+Package: base-files
+Version: 156-r42887
+Depends: libc, netifd, procd, jsonfilter
+Source: package/base-files
+Section: base
+Architecture: rtkmipsel
+Installed-Size: 26044
+Filename: bin/rtkmipsel/packages/base/base-files_156-r42887_rtkmipsel.ipk
+Size: 26697
+MD5Sum: 89de7eaaf88133fc897f8514ee595c72
+SHA256sum: bd49ef5d26418ac9ab2ce741e658c38f4b92ed5eeb23db154107a8889435f693
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: busybox
+Version: 1.22.1-2
+Depends: libc
+Source: package/utils/busybox
+License: GPLv2 BSD-4c
+LicenseFiles: LICENSE archival/libarchive/bz/LICENSE
+Section: base
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 230618
+Filename: bin/rtkmipsel/packages/base/busybox_1.22.1-2_rtkmipsel.ipk
+Size: 230706
+MD5Sum: 47676575e11027bb010ac39e934e0f34
+SHA256sum: e098fcd02e1733fdd85079c03802e89ffa931948301ea8d921088b69e338311d
+Description:  The Swiss Army Knife of embedded Linux.
+ It slices, it dices, it makes Julian Fries.
+
+Package: dnsmasq
+Version: 2.71-4
+Depends: libc
+Source: package/network/services/dnsmasq
+License: GPLv2
+LicenseFiles: COPYING
+Section: net
+Architecture: rtkmipsel
+Installed-Size: 94283
+Filename: bin/rtkmipsel/packages/base/dnsmasq_2.71-4_rtkmipsel.ipk
+Size: 94858
+MD5Sum: 44c510bccb7743bd70ddabf203a7cd0e
+SHA256sum: 284d7ca26b874ba91c3ed56fdf9c0680e96288581af5399a760b8c0aada09223
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+
+Package: dropbear
+Version: 2014.63-2
+Depends: libc
+Source: package/network/services/dropbear
+License: MIT
+LicenseFiles: LICENSE libtomcrypt/LICENSE libtommath/LICENSE
+Section: net
+Architecture: rtkmipsel
+Installed-Size: 80938
+Filename: bin/rtkmipsel/packages/base/dropbear_2014.63-2_rtkmipsel.ipk
+Size: 81620
+MD5Sum: b9e39031ddefdc7a22d04f8c7d592311
+SHA256sum: 6eb4d8fcff90afd6e3caaa51c606e35a0decdcde6eff2f662342fffba5f38bda
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: firewall
+Version: 2014-09-19
+Depends: libc, libubox, libubus, libuci, libip4tc, libip6tc, libxtables, kmod-ipt-core, kmod-ipt-nat
+Source: package/network/config/firewall
+Section: net
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 60156
+Filename: bin/rtkmipsel/packages/base/firewall_2014-09-19_rtkmipsel.ipk
+Size: 60501
+MD5Sum: 7856ab2645d7a132b598e64a2164e0bf
+SHA256sum: 78a6fdd4c05a9d782d81932630e7c1924a977f71a46de9d4c8285034bd0dbe5b
+Description:  This package provides a config-compatible C implementation of the UCI firewall.
+
+Package: fstools
+Version: 2014-06-22-e0430f5c62f367e5a8e02755412977b02c3fc45e
+Depends: libc, ubox
+Source: package/system/fstools
+License: GPLv2
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 16974
+Filename: bin/rtkmipsel/packages/base/fstools_2014-06-22-e0430f5c62f367e5a8e02755412977b02c3fc45e_rtkmipsel.ipk
+Size: 17550
+MD5Sum: 48f8db07cbd9dd7a4d1ac9424a23d34c
+SHA256sum: b978bc28f96afa78e405878576ec47f798ddad79e4cb8c3fbe18a8b85efc767d
+Description:  OpenWrt filesystem tools
+
+Package: hostapd-common
+Version: 2014-06-03.1-1
+Depends: libc
+Source: package/network/services/hostapd
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 4464
+Filename: bin/rtkmipsel/packages/base/hostapd-common_2014-06-03.1-1_rtkmipsel.ipk
+Size: 5049
+MD5Sum: 2ffc26872b464bb66b03b19f6907baab
+SHA256sum: 2678f9777c2af5afb27e14923a43f2b941f032aafcc84e984fa49da368007299
+Description:  hostapd/wpa_supplicant common support files
+
+Package: hostapd-utils
+Version: 2014-06-03.1-1
+Depends: libc
+Source: package/network/services/hostapd
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 15815
+Filename: bin/rtkmipsel/packages/base/hostapd-utils_2014-06-03.1-1_rtkmipsel.ipk
+Size: 16418
+MD5Sum: a0d01cd9e5697b14484a6cfbb25939d4
+SHA256sum: db5102648aa94ebd40747a399c1902c8c26d53c57d77db55e9a4189e22a0bd2f
+Description:  This package contains a command line utility to control the
+ IEEE 802.1x/WPA/EAP/RADIUS Authenticator.
+
+Package: ip6tables
+Version: 1.4.21-1
+Depends: libc, kmod-ip6tables, iptables
+Source: package/network/utils/iptables
+Section: net
+Architecture: rtkmipsel
+Installed-Size: 213
+Filename: bin/rtkmipsel/packages/base/ip6tables_1.4.21-1_rtkmipsel.ipk
+Size: 730
+MD5Sum: f161bf1f08739d798355fa984da24835
+SHA256sum: 37f1e2d59e1baecf7d70498d3e71d0d3153e6fa8d2c811b1464e3ffd637022e1
+Description:  IPv6 firewall administration tool
+
+Package: ip
+Version: 3.15.0-1
+Depends: libc, libnl-tiny
+Source: package/network/utils/iproute2
+Section: net
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: rtkmipsel
+Installed-Size: 68726
+Filename: bin/rtkmipsel/packages/base/ip_3.15.0-1_rtkmipsel.ipk
+Size: 69356
+MD5Sum: 4732598d1673cd3d5e9848b5726abe08
+SHA256sum: 932250dda9e7209e4d5a273be9bb630bdc6c4d300b19a1d3319918d07ff8e404
+Description:  Routing control utility (Minimal)
+
+Package: iptables-mod-conntrack-extra
+Version: 1.4.21-1
+Depends: libc, iptables, kmod-ipt-conntrack-extra
+Source: package/network/utils/iptables
+Section: net
+Architecture: rtkmipsel
+Installed-Size: 9089
+Filename: bin/rtkmipsel/packages/base/iptables-mod-conntrack-extra_1.4.21-1_rtkmipsel.ipk
+Size: 9721
+MD5Sum: 9bbb185023722c245478f46d4642744b
+SHA256sum: e023e9b64e687a53166329a4b2d9b65ceff91a309ced8682e357c1e996119971
+Description:  Extra iptables extensions for connection tracking.
+ 
+ Matches:
+ - connbytes
+ - connlimit
+ - connmark
+ - recent
+ - helper
+ 
+ Targets:
+ - CONNMARK
+ 
+
+Package: iptables-mod-filter
+Version: 1.4.21-1
+Depends: libc, iptables, kmod-ipt-filter
+Source: package/network/utils/iptables
+Section: net
+Architecture: rtkmipsel
+Installed-Size: 14570
+Filename: bin/rtkmipsel/packages/base/iptables-mod-filter_1.4.21-1_rtkmipsel.ipk
+Size: 15115
+MD5Sum: a11b424886af59f99df39f6e8cbb403a
+SHA256sum: bac0a811da5b050ef18164a6a2a7ae9742e32a05090e10fefb728c08cb3822f1
+Description:  iptables extensions for packet content inspection.
+ Includes support for:
+ 
+ Matches:
+ - layer7
+ - string
+ 
+
+Package: iptables-mod-ipopt
+Version: 1.4.21-1
+Depends: libc, iptables, kmod-ipt-ipopt
+Source: package/network/utils/iptables
+Section: net
+Architecture: rtkmipsel
+Installed-Size: 12718
+Filename: bin/rtkmipsel/packages/base/iptables-mod-ipopt_1.4.21-1_rtkmipsel.ipk
+Size: 13278
+MD5Sum: 4899520b195dd7fd2a238fef9d5d5822
+SHA256sum: e850daad8f1f8b3b3d1abde1f9a72098f0436c17ae3df1099caa23221edc5d6d
+Description:  iptables extensions for matching/changing IP packet options.
+ 
+ Matches:
+ - dscp
+ - ecn
+ - length
+ - statistic
+ - tcpmss
+ - unclean
+ - hl
+ 
+ Targets:
+ - DSCP
+ - CLASSIFY
+ - ECN
+ - HL
+ 
+
+Package: iptables
+Version: 1.4.21-1
+Depends: libc, kmod-ipt-core, libip4tc, libip6tc, libxtables
+Source: package/network/utils/iptables
+Section: net
+Architecture: rtkmipsel
+Installed-Size: 49584
+Filename: bin/rtkmipsel/packages/base/iptables_1.4.21-1_rtkmipsel.ipk
+Size: 50065
+MD5Sum: 6e5caf0f57dbe083bf0262c94995ba76
+SHA256sum: 4c6b59f95c731f1df9310adddb010321f9efbaab6751dc2806bfcd852659be81
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: iw
+Version: 3.15-1
+Depends: libc, libnl-tiny
+Source: package/network/utils/iw
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 42622
+Filename: bin/rtkmipsel/packages/base/iw_3.15-1_rtkmipsel.ipk
+Size: 43216
+MD5Sum: 7c0ca2641f43adfdee69183c4333c9f9
+SHA256sum: b2ae2da71bfc129e0505e445dbb3e2d03d26d81355ce796326313504b0b49bc4
+Description:  cfg80211 interface configuration utility
+
+Package: jshn
+Version: 2014-08-04-dffbc09baf71b294185a36048166d00066d433b5
+Depends: libc, libjson-c, libubox, libblobmsg-json
+Source: package/libs/libubox
+License: ISC BSD-3c
+Section: utils
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 5424
+Filename: bin/rtkmipsel/packages/base/jshn_2014-08-04-dffbc09baf71b294185a36048166d00066d433b5_rtkmipsel.ipk
+Size: 6064
+MD5Sum: d6c44391fe612c5904a311a173beb3e0
+SHA256sum: 21e459a557987b520a7394158b4454e393edc7725422805d88be13f25d928583
+Description:  Library for parsing and generating JSON from shell scripts
+
+Package: jsonfilter
+Version: 2014-06-19-cdc760c58077f44fc40adbbe41e1556a67c1b9a9
+Depends: libc, libubox, libjson-c
+Source: package/utils/jsonfilter
+Section: base
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 7985
+Filename: bin/rtkmipsel/packages/base/jsonfilter_2014-06-19-cdc760c58077f44fc40adbbe41e1556a67c1b9a9_rtkmipsel.ipk
+Size: 8629
+MD5Sum: e80baf0365ada5ec961830e2d381bd1b
+SHA256sum: 310100b2d6de50354e0272be3468a8ad30ea11cc5b6fff08cb1e6e55bf874965
+Description:  OpenWrt JSON filter utility
+
+Package: kmod-cfg80211
+Version: 3.10.49+2014-05-22-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), iw
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 118307
+Filename: bin/rtkmipsel/packages/base/kmod-cfg80211_3.10.49+2014-05-22-1_rtkmipsel.ipk
+Size: 118624
+MD5Sum: fe45c276974f362d0312086a498f5699
+SHA256sum: fcb6fb80cfeb055f3a0a784a8d59845ced15cd7de8c967fc84c8261fb4a2edcf
+Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
+
+Package: kmod-crypto-aes
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-crypto-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 104
+Filename: bin/rtkmipsel/packages/base/kmod-crypto-aes_3.10.49-1_rtkmipsel.ipk
+Size: 682
+MD5Sum: 01997ca4d792772b84c67fc0f23840f1
+SHA256sum: 70deeeece9828d643424cedf9a7f810ee9e83eece13e54a0c64a09899dc4d3c9
+Description:  AES cipher CryptoAPI module
+
+Package: kmod-crypto-arc4
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-crypto-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 1214
+Filename: bin/rtkmipsel/packages/base/kmod-crypto-arc4_3.10.49-1_rtkmipsel.ipk
+Size: 1941
+MD5Sum: 8b4c5c49f3d0965fc35219c5602454c5
+SHA256sum: 17aa08b915ae92efe1cf929e22c3a83759671a60e9a096c1cf94a1d9ec41ed38
+Description:  ARC4 (RC4) cipher CryptoAPI module
+
+Package: kmod-crypto-core
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 7369
+Filename: bin/rtkmipsel/packages/base/kmod-crypto-core_3.10.49-1_rtkmipsel.ipk
+Size: 8005
+MD5Sum: 5e736657e6bad2f987c61a22393f8cc6
+SHA256sum: 16674d9b88ed784d4fa34c91ca1d75bc51d309e1f93009a45050169b4e80aaa9
+Description:  Core CryptoAPI modules
+
+Package: kmod-crypto-ecb
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-crypto-manager, kmod-crypto-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 1557
+Filename: bin/rtkmipsel/packages/base/kmod-crypto-ecb_3.10.49-1_rtkmipsel.ipk
+Size: 2285
+MD5Sum: 65e2e97caf8f973158b77d06a75d86fb
+SHA256sum: 484ac43024256e83e2970d44f849c404f2fec2a33d3b1b01288a773b8d7a209c
+Description:  Electronic CodeBook CryptoAPI module
+
+Package: kmod-crypto-hash
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-crypto-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 6025
+Filename: bin/rtkmipsel/packages/base/kmod-crypto-hash_3.10.49-1_rtkmipsel.ipk
+Size: 6702
+MD5Sum: aa76dcb5df7c8db0df8ea38ff228cd86
+SHA256sum: 8ce0b43bf48811ef30f9adf94b83f730c906a2fa0ef5f4a39a8a6b5cd22aa3bf
+Description:  CryptoAPI hash support
+
+Package: kmod-crypto-manager
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-crypto-hash, kmod-crypto-pcompress, kmod-crypto-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 3467
+Filename: bin/rtkmipsel/packages/base/kmod-crypto-manager_3.10.49-1_rtkmipsel.ipk
+Size: 4051
+MD5Sum: b134e71d66f15c9a3c58261170959e70
+SHA256sum: 58d13340b086a7e87b865d4f021d4a72743be790e0b27a0eca271f350660fb03
+Description:  CryptoAPI algorithm manager
+
+Package: kmod-crypto-pcompress
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-crypto-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 103
+Filename: bin/rtkmipsel/packages/base/kmod-crypto-pcompress_3.10.49-1_rtkmipsel.ipk
+Size: 693
+MD5Sum: 3f220eb9a67adb401c80a87cc6fc04d1
+SHA256sum: 7cd03a85c0eb0b29eed71d9b59b799bb44b79ec43daf1138d0a9677538e82fa5
+Description:  CryptoAPI Partial (de)compression operations
+
+Package: kmod-crypto-sha1
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-crypto-hash, kmod-crypto-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 1491
+Filename: bin/rtkmipsel/packages/base/kmod-crypto-sha1_3.10.49-1_rtkmipsel.ipk
+Size: 2220
+MD5Sum: aa63e56a82ad4b7ed73b2018db9242c6
+SHA256sum: 593cea151d306a0529d085b5f7e686deb02b9e81b7ec57fdd2ef051e0d4165f4
+Description:  SHA1 digest CryptoAPI module
+
+Package: kmod-fastpath
+Version: 3.10.49+0.1-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ipt-core, kmod-ipt-conntrack, kmod-ipt-nat, kmod-ppp
+Source: package/kernel/fastpath
+Section: kernel
+Architecture: rtkmipsel
+Installed-Size: 38632
+Filename: bin/rtkmipsel/packages/base/kmod-fastpath_3.10.49+0.1-1_rtkmipsel.ipk
+Size: 39252
+MD5Sum: 040eb5b19424c17278d1487d5db0b305
+SHA256sum: f4b86f594704886c7b580691c650b67ea237241f82fb57bc3591ecf7d5d06feb
+Description:  Kernel modules for fastpath support
+
+Package: kmod-gre
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ipv6, kmod-iptunnel
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 7700
+Filename: bin/rtkmipsel/packages/base/kmod-gre_3.10.49-1_rtkmipsel.ipk
+Size: 8426
+MD5Sum: 1bc0afaab489d6958a39b1b4033f8c45
+SHA256sum: 59a72a294f04100d4ad6159519f32acf3d95944ba659b90f235bcd1f36769f7a
+Description:  Generic Routing Encapsulation support
+
+Package: kmod-ifb
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 2989
+Filename: bin/rtkmipsel/packages/base/kmod-ifb_3.10.49-1_rtkmipsel.ipk
+Size: 3664
+MD5Sum: 1ba44aa537769dd9b6d1288a7bad9d61
+SHA256sum: f64019fb99b0ec0b15dcc47c65ca5d5a28516816adcfcb82156ce91477e00657
+Description:  The Intermediate Functional Block
+
+Package: kmod-ip6tables
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ipv6, kmod-ipt-core, kmod-ipt-conntrack
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 19738
+Filename: bin/rtkmipsel/packages/base/kmod-ip6tables_3.10.49-1_rtkmipsel.ipk
+Size: 20480
+MD5Sum: 6c1634aa6e51baf07c56eda0e53937b4
+SHA256sum: 12429d863983f0c2b225f8f6d0feb3b83789151c1a35ed7772e94f560cdfb3e3
+Description:  Netfilter IPv6 firewalling support
+
+Package: kmod-ipt-conntrack-extra
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ipt-core, kmod-ipt-conntrack
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 10299
+Filename: bin/rtkmipsel/packages/base/kmod-ipt-conntrack-extra_3.10.49-1_rtkmipsel.ipk
+Size: 10935
+MD5Sum: 19be34dbe8ed56fa1b2235be1209dcba
+SHA256sum: b1e920bf65a0584162fc38190d3b7643dd1362a9ba128b423b1ca7ebdfc273c6
+Description:  Netfilter (IPv4) extra kernel modules for connection tracking
+ Includes:
+ - connbytes
+ - connmark/CONNMARK
+ - conntrack
+ - helper
+ - recent
+
+Package: kmod-ipt-conntrack
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ipt-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 37560
+Filename: bin/rtkmipsel/packages/base/kmod-ipt-conntrack_3.10.49-1_rtkmipsel.ipk
+Size: 38277
+MD5Sum: f681c5a841267aff1cdd6121c082f873
+SHA256sum: 18fc2f0616cfde87846b98eb841b8681dce29c87c86c92b4b4f02b90a03757a3
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 32201
+Filename: bin/rtkmipsel/packages/base/kmod-ipt-core_3.10.49-1_rtkmipsel.ipk
+Size: 32859
+MD5Sum: 877171d035cf067eef67da4391e2f34d
+SHA256sum: 32e77f229a5dd2b6ab327c19b104800915389848ba549767ae9af3c0831348b2
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-filter
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ipt-core, kmod-lib-textsearch, kmod-ipt-conntrack
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 9076
+Filename: bin/rtkmipsel/packages/base/kmod-ipt-filter_3.10.49-1_rtkmipsel.ipk
+Size: 9742
+MD5Sum: d3f8018970c0e80ccf7ff49e38f7097f
+SHA256sum: 5408b43812f05bb8dacb89af18376b291abcf9cfd38ff3b3aa569ee1b6c00a82
+Description:  Netfilter (IPv4) kernel modules for packet content inspection
+ Includes:
+ - layer7
+ - string
+
+Package: kmod-ipt-ipopt
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ipt-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 6023
+Filename: bin/rtkmipsel/packages/base/kmod-ipt-ipopt_3.10.49-1_rtkmipsel.ipk
+Size: 6726
+MD5Sum: 40e81f7e6e194c0ae6b918e30aeecbd4
+SHA256sum: 303c602177838f28c707a5db1f576e5e353e6b85ef7d5a60ddf849323cfd3edb
+Description:  Netfilter (IPv4) modules for matching/changing IP packet options
+ Includes:
+ - CLASSIFY
+ - dscp/DSCP
+ - ecn/ECN
+ - hl/HL
+ - length
+ - mark/MARK
+ - statistic
+ - tcpmss
+ - time
+ - ttl/TTL
+ - unclean
+
+Package: kmod-ipt-nat
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ipt-core, kmod-ipt-conntrack
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 13983
+Filename: bin/rtkmipsel/packages/base/kmod-ipt-nat_3.10.49-1_rtkmipsel.ipk
+Size: 14615
+MD5Sum: fa8db3eaaa7d82871ff5684f2914ce77
+SHA256sum: bc66aafeec9cc13ab8ab1c157032ebbde544fd092cc2875510a0c4a7af6672f8
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-ipt-nathelper
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ipt-core, kmod-ipt-nat
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 7965
+Filename: bin/rtkmipsel/packages/base/kmod-ipt-nathelper_3.10.49-1_rtkmipsel.ipk
+Size: 8644
+MD5Sum: 10e5e8afb00bcef7abcbffbf23f789ec
+SHA256sum: a9457543b14e3a0d458f9874bc798418c3732651406eede9cdb22244ba909995
+Description:  Default Netfilter (IPv4) Conntrack and NAT helpers
+ Includes:
+ - ftp
+ - irc
+ - tftp
+
+Package: kmod-iptunnel
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 7925
+Filename: bin/rtkmipsel/packages/base/kmod-iptunnel_3.10.49-1_rtkmipsel.ipk
+Size: 8599
+MD5Sum: ed18e3f94500833f2b16cb4fe0ea16a4
+SHA256sum: 7005f0187876a284cddaa7fe7c3a93547bf169ca29b9026f6f2b79734cb6b4c9
+Description:  Kernel module for generic IP tunnel support
+
+Package: kmod-ipv6
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 153538
+Filename: bin/rtkmipsel/packages/base/kmod-ipv6_3.10.49-1_rtkmipsel.ipk
+Size: 153503
+MD5Sum: c36026909adc6d3bb716157b0fc63394
+SHA256sum: d5be443fcf7fa172fd417fde13817b6a825482412cb7fe38f648afb87ed222e7
+Description:  Kernel modules for IPv6 support
+
+Package: kmod-l2tp
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ipv6
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 14100
+Filename: bin/rtkmipsel/packages/base/kmod-l2tp_3.10.49-1_rtkmipsel.ipk
+Size: 14772
+MD5Sum: e7716e2229538d9b36a3d098e835bc4c
+SHA256sum: 4d1322b9d92b9d47066c2edbf436d8a4998c5bc6de3d97dc6fad54209dd6205e
+Description:  Kernel modules for L2TP V3 Support
+
+Package: kmod-lib-crc-ccitt
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 105
+Filename: bin/rtkmipsel/packages/base/kmod-lib-crc-ccitt_3.10.49-1_rtkmipsel.ipk
+Size: 682
+MD5Sum: 724aa252ae0e3a7c90af45987b750f78
+SHA256sum: 708ecd4e196ddf2278ea28c002d5653a02e684fd71af95f72cbacec635050b00
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-lib-textsearch
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 3679
+Filename: bin/rtkmipsel/packages/base/kmod-lib-textsearch_3.10.49-1_rtkmipsel.ipk
+Size: 4274
+MD5Sum: 011b2f82f4b409e767dcfd7c97324f07
+SHA256sum: de7304685acbe8a3d74fd991dab91331331b346ef5048ea12546d4ff7e466b9d
+Description:  Textsearch support
+
+Package: kmod-mac80211
+Version: 3.10.49+2014-05-22-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-crypto-core, kmod-crypto-arc4, kmod-crypto-aes, kmod-cfg80211, hostapd-common
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 212950
+Filename: bin/rtkmipsel/packages/base/kmod-mac80211_3.10.49+2014-05-22-1_rtkmipsel.ipk
+Size: 212376
+MD5Sum: 72a721085fe38f07c566ede1dcb5496d
+SHA256sum: 04ddb2672d5539f2106bb5b2160de711f54ac35f08832d27daf0c732a32fd841
+Description:  Generic IEEE 802.11 Networking Stack (mac80211)
+
+Package: kmod-mppe
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ppp, kmod-crypto-core, kmod-crypto-arc4, kmod-crypto-sha1, kmod-crypto-ecb
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 4373
+Filename: bin/rtkmipsel/packages/base/kmod-mppe_3.10.49-1_rtkmipsel.ipk
+Size: 4990
+MD5Sum: 4e75fb714fec5ad256ed21991e00983a
+SHA256sum: 3f9a402de8d9fad8330914ab9d328215f39e201148f78db530bea7d6b473b756
+Description:  Kernel modules for Microsoft PPP compression/encryption
+
+Package: kmod-ppp
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-lib-crc-ccitt, kmod-slhc
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 21629
+Filename: bin/rtkmipsel/packages/base/kmod-ppp_3.10.49-1_rtkmipsel.ipk
+Size: 22206
+MD5Sum: cabc2b3a1905e88ba4367ce4d01dabd6
+SHA256sum: c7e89f807ada2fc783b8a273d25f8736d8cb5b9ff2c1f0a0eff2b0effe5ffef9
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ppp, kmod-pppox
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 6746
+Filename: bin/rtkmipsel/packages/base/kmod-pppoe_3.10.49-1_rtkmipsel.ipk
+Size: 7394
+MD5Sum: 3378d6918c49bcc881dee391c6af0bc8
+SHA256sum: 2d970d8b46934d0fa208059b46cf88618bdf22c30299be6ef873ce36edcaf9f6
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppol2tp
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ppp, kmod-pppox, kmod-l2tp
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 9757
+Filename: bin/rtkmipsel/packages/base/kmod-pppol2tp_3.10.49-1_rtkmipsel.ipk
+Size: 10364
+MD5Sum: 0b157732796fa5dd6b07c3732ae7f737
+SHA256sum: 756dab6abda1af20fbd28d0c77af0d39f0235f15a98faa4400670adcd42041d7
+Description:  Kernel modules for PPPoL2TP (PPP over L2TP) support
+
+Package: kmod-pppox
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ppp
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 1557
+Filename: bin/rtkmipsel/packages/base/kmod-pppox_3.10.49-1_rtkmipsel.ipk
+Size: 2175
+MD5Sum: e25ac6672afefcfda8ae75611364ff83
+SHA256sum: a49647888ba352b12c502a2d41a92414ecc17509aaf0f516689c66dbc1239641
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-pptp
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-ppp, kmod-gre, kmod-pppox
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 5139
+Filename: bin/rtkmipsel/packages/base/kmod-pptp_3.10.49-1_rtkmipsel.ipk
+Size: 5717
+MD5Sum: 9fe21ff5553ed82f3c04bcf615a4de97
+SHA256sum: 74be8ec6392d2916c92fdb9a34f9fee26a789441c6a97ad3af82cc222711345a
+Description:  PPtP support
+
+Package: kmod-rtl8192cd
+Version: 3.10.49+2014-05-22-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-mac80211
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 940762
+Filename: bin/rtkmipsel/packages/base/kmod-rtl8192cd_3.10.49+2014-05-22-1_rtkmipsel.ipk
+Size: 925394
+MD5Sum: df6e07be7ff82e93fdf931b58c2f6cb8
+SHA256sum: cb9b38a07816253ba7dbf9731d38c45c02adcb06f3475ab8dcea78cee9299e40
+Description:  This module adds support for Realtek rtl8192cd wireless adapters
+
+Package: kmod-rtl_nf
+Version: 3.10.49+0.1-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d)
+Source: package/kernel/rtl_nf
+Section: kernel
+Architecture: rtkmipsel
+Installed-Size: 1866
+Filename: bin/rtkmipsel/packages/base/kmod-rtl_nf_3.10.49+0.1-1_rtkmipsel.ipk
+Size: 2535
+MD5Sum: df39d3303d63f1348c9d589891a5100f
+SHA256sum: 37eeec51969ce8ae93c5ae7aea4ca3ec300d375af48ba822e962da60235a10e1
+Description:  Kernel module to rtl_nf
+
+Package: kmod-rtl_sendfile
+Version: 3.10.49+0.1-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d)
+Source: package/kernel/rtl_sendfile
+Section: kernel
+Architecture: rtkmipsel
+Installed-Size: 7439
+Filename: bin/rtkmipsel/packages/base/kmod-rtl_sendfile_3.10.49+0.1-1_rtkmipsel.ipk
+Size: 8145
+MD5Sum: 7b5ef249bcba4a7575689d5992e33784
+SHA256sum: 80758bd9b840568948953da876cdd5c21136111bd953db0ea55819bcc284f0e8
+Description:  Improve performance on socket-to-file by using zero copy techonology.
+
+Package: kmod-sched-connmark
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-sched-core, kmod-ipt-core, kmod-ipt-conntrack-extra
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 1281
+Filename: bin/rtkmipsel/packages/base/kmod-sched-connmark_3.10.49-1_rtkmipsel.ipk
+Size: 2021
+MD5Sum: 5dc0e1498d76eb03534638fc0dedc6a7
+SHA256sum: 76e5d3fee392968e567284965108c9a479608ad52d5894fcc21e79a496972069
+Description:  Traffic shaper conntrack mark support
+
+Package: kmod-sched-core
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 30477
+Filename: bin/rtkmipsel/packages/base/kmod-sched-core_3.10.49-1_rtkmipsel.ipk
+Size: 31153
+MD5Sum: 978bb439443d9b5341606329f87d8e5e
+SHA256sum: d919cb6693354918fc038e16c792368ceb209811f420e1c68034f0a8a3a2067d
+Description:  Core kernel scheduler support for IP traffic
+
+Package: kmod-slhc
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-76f09851efbe8ce3add7bf7dd866580d), kmod-lib-crc-ccitt
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: rtkmipsel
+Installed-Size: 3883
+Filename: bin/rtkmipsel/packages/base/kmod-slhc_3.10.49-1_rtkmipsel.ipk
+Size: 4439
+MD5Sum: 04a3c22974fd9224b43e404d93d22417
+SHA256sum: 832f967c055905b92b3492f28ee1a0dd397a3d2c1585d5bfecc35eb39a23334d
+Description:  Serial Line Header Compression
+
+Package: libblobmsg-json
+Version: 2014-08-04-dffbc09baf71b294185a36048166d00066d433b5
+Depends: libc, libjson-c, libubox
+Source: package/libs/libubox
+License: ISC BSD-3c
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 3731
+Filename: bin/rtkmipsel/packages/base/libblobmsg-json_2014-08-04-dffbc09baf71b294185a36048166d00066d433b5_rtkmipsel.ipk
+Size: 4352
+MD5Sum: 5088953cca3988120543424235b27af7
+SHA256sum: 25b82600229eb6a82f47368c8c05522b550d30c98cdaff9a5daa51d0e6580fb3
+Description:  blobmsg <-> json conversion library
+
+Package: libgcc
+Version: 4.8-linaro-1
+Source: package/libs/toolchain
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 31619
+Filename: bin/rtkmipsel/packages/base/libgcc_4.8-linaro-1_rtkmipsel.ipk
+Size: 32162
+MD5Sum: 5b871e6be3ccd0e4f24ea4234b3dbcda
+SHA256sum: 6cf9a81de93895765cae98711e557dee1ed942dd6415eb16e17db3d5adf711f5
+Description:  GCC support library
+
+Package: libip4tc
+Version: 1.4.21-1
+Depends: libc
+Source: package/network/utils/iptables
+Section: libs
+Architecture: rtkmipsel
+Installed-Size: 10190
+Filename: bin/rtkmipsel/packages/base/libip4tc_1.4.21-1_rtkmipsel.ipk
+Size: 10707
+MD5Sum: 14077fb54707c1df4c0740b33037713f
+SHA256sum: f7face942a0688c702467cd77f9f42dfb3af4f884d44dd0b3d62741d03e20ef3
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc
+Version: 1.4.21-1
+Depends: libc
+Source: package/network/utils/iptables
+Section: libs
+Architecture: rtkmipsel
+Installed-Size: 10568
+Filename: bin/rtkmipsel/packages/base/libip6tc_1.4.21-1_rtkmipsel.ipk
+Size: 11116
+MD5Sum: d1cd2dada82201a99fbf2a33595a389b
+SHA256sum: 3821c3b56b551341314ef7f4d3af1b15276011445354cd696620f1292da9ea58
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libiwinfo-lua
+Version: 51
+Depends: libc, libiwinfo, liblua
+Source: package/network/utils/iwinfo
+Section: lang
+Maintainer: Jo-Philipp Wich <xm@subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 5589
+Filename: bin/rtkmipsel/packages/base/libiwinfo-lua_51_rtkmipsel.ipk
+Size: 6144
+MD5Sum: 8eb3ac6d4d370f62e1484b47c8440ce5
+SHA256sum: 41adf1a9e19188111b6a867236dd6fb558d5141f58840f12d9b4fe0a3caa856e
+Description:  This is the Lua binding for the iwinfo library. It provides access to all enabled
+ backends.
+
+Package: libiwinfo
+Version: 51
+Depends: libc, libnl-tiny
+Source: package/network/utils/iwinfo
+Section: libs
+Maintainer: Jo-Philipp Wich <xm@subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 22376
+Filename: bin/rtkmipsel/packages/base/libiwinfo_51_rtkmipsel.ipk
+Size: 22971
+MD5Sum: aa6264d1540bb72d5a86714c9b95f070
+SHA256sum: 8304113ab51e57ed5c737d48f16b75984beed0b11c9105ac12be481aa0b252d5
+Description:  Wireless information library with consistent interface for proprietary Broadcom,
+ madwifi, nl80211 and wext driver interfaces.
+
+Package: libjson-c
+Version: 0.11-2
+Depends: libc
+Source: package/libs/libjson-c
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 12859
+Filename: bin/rtkmipsel/packages/base/libjson-c_0.11-2_rtkmipsel.ipk
+Size: 13449
+MD5Sum: 60f4802dd44a80529990aec626e86735
+SHA256sum: 10426e69b8c2e4fe2ce28514da2c6870793afdd46ca9d01b5429ad14e3480645
+Description:  This package contains a library for javascript object notation backends.
+
+Package: libjson-script
+Version: 2014-08-04-dffbc09baf71b294185a36048166d00066d433b5
+Depends: libc, libubox
+Source: package/libs/libubox
+License: ISC BSD-3c
+Section: utils
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 5227
+Filename: bin/rtkmipsel/packages/base/libjson-script_2014-08-04-dffbc09baf71b294185a36048166d00066d433b5_rtkmipsel.ipk
+Size: 5814
+MD5Sum: 39b78c655de6c67b7a5fb1f9d97196e6
+SHA256sum: 3a14b4e1c4761156112b333e5e3bebfc55b7bd0af10983a4cf9859b8b1ac0264
+Description:  Minimalistic JSON based scripting engine
+
+Package: liblua
+Version: 5.1.5-1
+Depends: libc
+Source: package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 72979
+Filename: bin/rtkmipsel/packages/base/liblua_5.1.5-1_rtkmipsel.ipk
+Size: 73463
+MD5Sum: 5ae847ade2cca64dbcc67dbb9484e546
+SHA256sum: 6770dee1d6e6097bd4eef13f468fe99df4e284a69214222d8ebb80b2613f3033
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua shared libraries, needed by other programs.
+
+Package: libnl-tiny
+Version: 0.1-3
+Depends: libc
+Source: package/libs/libnl-tiny
+License: GPLv2 LGPLv2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 12953
+Filename: bin/rtkmipsel/packages/base/libnl-tiny_0.1-3_rtkmipsel.ipk
+Size: 13537
+MD5Sum: 85a32a7cabe2762147935a2e48829700
+SHA256sum: 9a512587e2a3e9c572beb6ddd69165824cefe107092b3a41c6bb0a37c333748a
+Description:  This package contains a stripped down version of libnl
+
+Package: libpcap
+Version: 1.5.3-1
+Depends: libc
+Source: package/libs/libpcap
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 88202
+Filename: bin/rtkmipsel/packages/base/libpcap_1.5.3-1_rtkmipsel.ipk
+Size: 88727
+MD5Sum: c93cd5f3d53311abd3b646bda29ccece
+SHA256sum: 3220a9e0dbfb21318a11d739b0aa3b07ab9fdeda0bfb1c2432ff8b4b993dac81
+Description:  This package contains a system-independent library for user-level network packet
+ capture.
+
+Package: libubox
+Version: 2014-08-04-dffbc09baf71b294185a36048166d00066d433b5
+Depends: libc
+Source: package/libs/libubox
+License: ISC BSD-3c
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 15399
+Filename: bin/rtkmipsel/packages/base/libubox_2014-08-04-dffbc09baf71b294185a36048166d00066d433b5_rtkmipsel.ipk
+Size: 15951
+MD5Sum: f642a80e90f4b3d50df3e12eb26e3d0b
+SHA256sum: 769982249208bd67cb62a700ea44e87c8162e15cbce397128b7f3e6310b7ef7d
+Description:  Basic utility library
+
+Package: libubus-lua
+Version: 2014-09-17-4c4f35cf2230d70b9ddd87638ca911e8a563f2f3
+Depends: libc, libubus, liblua
+Source: package/system/ubus
+License: LGPLv2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 5584
+Filename: bin/rtkmipsel/packages/base/libubus-lua_2014-09-17-4c4f35cf2230d70b9ddd87638ca911e8a563f2f3_rtkmipsel.ipk
+Size: 6201
+MD5Sum: c82fd1d5c263d52260601ed30a5ce33b
+SHA256sum: 6dcf46bec6a2eade555140432796f6d3624395d19242d8c21aa78e16796bf57f
+Description:  Lua binding for the OpenWrt RPC client
+
+Package: libubus
+Version: 2014-09-17-4c4f35cf2230d70b9ddd87638ca911e8a563f2f3
+Depends: libc, libubox
+Source: package/system/ubus
+License: LGPLv2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 9090
+Filename: bin/rtkmipsel/packages/base/libubus_2014-09-17-4c4f35cf2230d70b9ddd87638ca911e8a563f2f3_rtkmipsel.ipk
+Size: 9668
+MD5Sum: 979547e2fdd81541ab76e6d33a3b9be6
+SHA256sum: 9566a584478267ac60110f7e42bc64e228b7ed81e80271e008f78f7a69034bb1
+Description:  OpenWrt RPC client library
+
+Package: libuci-lua
+Version: 2014-04-11.1-1
+Depends: libc, libuci, liblua
+Source: package/system/uci
+License: LGPLv2.1 GPLv2
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 6303
+Filename: bin/rtkmipsel/packages/base/libuci-lua_2014-04-11.1-1_rtkmipsel.ipk
+Size: 6874
+MD5Sum: 6e99671604caa3940604029a441f483c
+SHA256sum: 96021c4e04df857acbb15e897b499b86b4a7bdfea11c7d3c5b696549ed5cd7d9
+Description:  Lua plugin for UCI
+
+Package: libuci
+Version: 2014-04-11.1-1
+Depends: libc, libubox
+Source: package/system/uci
+License: LGPLv2.1 GPLv2
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 16576
+Filename: bin/rtkmipsel/packages/base/libuci_2014-04-11.1-1_rtkmipsel.ipk
+Size: 17139
+MD5Sum: 09393dce500500755095e195c6420d22
+SHA256sum: 4d996c5ec6f82683fc4fc37f8c44a327d71b578ae2fde77d1aa9274d0a32805d
+Description:  C library for the Unified Configuration Interface (UCI)
+
+Package: libxtables
+Version: 1.4.21-1
+Depends: libc
+Source: package/network/utils/iptables
+Section: libs
+Architecture: rtkmipsel
+Installed-Size: 17126
+Filename: bin/rtkmipsel/packages/base/libxtables_1.4.21-1_rtkmipsel.ipk
+Size: 17649
+MD5Sum: f1870c5a717c16fd18f6ad016bfe7911
+SHA256sum: 2b10db41dfb0c4f0d576c069d95b885c76975cefaecc18230e5d727246b267f4
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: lua
+Version: 5.1.5-1
+Depends: libc, liblua
+Source: package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: lang
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 4634
+Filename: bin/rtkmipsel/packages/base/lua_5.1.5-1_rtkmipsel.ipk
+Size: 5311
+MD5Sum: d3a160e7cd1f5e322feb19ef10b94e18
+SHA256sum: b6fd73cbc81cd42ed761f3171e4bed68b834b4629c0a3a22f91f53c0c1418ccf
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua language interpreter.
+
+Package: mtd
+Version: 20
+Depends: libc, libubox
+Source: package/system/mtd
+License: GPLv2 GPLv2+
+Section: utils
+Architecture: rtkmipsel
+Installed-Size: 11564
+Filename: bin/rtkmipsel/packages/base/mtd_20_rtkmipsel.ipk
+Size: 12112
+MD5Sum: 84eb6b44eb1b5eee45d3b2595fda4689
+SHA256sum: 53ea7dc3150ca90ef5288c76c94efa516e496b1c58515cc3626767dfa8d3636e
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
+Package: netifd
+Version: 2014-09-08-46c569989f984226916fec28dd8ef152a664043e
+Depends: libc, libuci, libnl-tiny, libubus, ubus, ubusd, jshn, libubox
+Source: package/network/config/netifd
+License: GPLv2
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 58610
+Filename: bin/rtkmipsel/packages/base/netifd_2014-09-08-46c569989f984226916fec28dd8ef152a664043e_rtkmipsel.ipk
+Size: 58967
+MD5Sum: ce0756cc8166fb7ae8f7088b09620e35
+SHA256sum: 74efe78c429a9a00da23283238237e8c795ef9a1da6be9527a178420115405df
+Description:  OpenWrt Network Interface Configuration Daemon
+
+Package: odhcp6c
+Version: 2014-10-12-c52296c48abe2025abab03cea98f52a654b92ee2
+Depends: libc, kmod-ipv6
+Source: package/network/ipv6/odhcp6c
+Section: net
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: rtkmipsel
+Installed-Size: 22823
+Filename: bin/rtkmipsel/packages/base/odhcp6c_2014-10-12-c52296c48abe2025abab03cea98f52a654b92ee2_rtkmipsel.ipk
+Size: 23440
+MD5Sum: 9e1bf1f72963fcc2f3b7e54753276d47
+SHA256sum: 0c4aa7239490cbf5d87589d8d02d76bcf3c042f45fd60f91fe716fb3640f7f24
+Description:  Embedded DHCPv6-client for OpenWrt
+
+Package: odhcpd
+Version: 2014-09-25-a6e2953843eaf6c93764f9feef10466e7a84ec85
+Depends: libc, libubox, libuci, libubus
+Source: package/network/services/odhcpd
+Section: net
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: rtkmipsel
+Installed-Size: 30571
+Filename: bin/rtkmipsel/packages/base/odhcpd_2014-09-25-a6e2953843eaf6c93764f9feef10466e7a84ec85_rtkmipsel.ipk
+Size: 31136
+MD5Sum: 98736ef9f360af160513f236002ff1bf
+SHA256sum: 5cf7fb5d859f4d1623630d8967592f7986787d7226df3a5145adf71fae94d42a
+Description:  odhcpd is a daemon for serving and relaying IP management protocols to
+ configure clients and downstream routers. It tries to follow the RFC 6204
+ requirements for IPv6 home routers.
+ 
+ odhcpd provides server services for DHCP, RA, stateless and stateful DHCPv6,
+ prefix delegation and can be used to relay RA, DHCPv6 and NDP between routed
+ (non-bridged) interfaces in case no delegated prefixes are available.
+
+Package: opkg
+Version: 9c97d5ecd795709c8584e972bfdf3aee3a5b846d-7
+Depends: libc
+Source: package/system/opkg
+License: GPLv2
+LicenseFiles: COPYING
+Section: base
+Maintainer: Jo-Philipp Wich <xm@subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 56321
+Filename: bin/rtkmipsel/packages/base/opkg_9c97d5ecd795709c8584e972bfdf3aee3a5b846d-7_rtkmipsel.ipk
+Size: 57085
+MD5Sum: df8e82cde8293b47c8ce3452b7fe73d3
+SHA256sum: 68da46e58b1c27f1a17db71ed654775267ba9d1c8423ca045b142bc3e31ab338
+Description:  Lightweight package management system
+ opkg is the opkg Package Management System, for handling
+ installation and removal of packages on a system. It can
+ recursively follow dependencies and download all packages
+ necessary to install a particular package.
+ 
+ opkg knows how to install both .ipk and .deb packages.
+
+Package: ppp-mod-pppoe
+Version: 2.4.7-2
+Depends: libc, kmod-pppoe
+Source: package/network/services/ppp
+Section: net
+Maintainer: Jo-Philipp Wich <xm@subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 9510
+Filename: bin/rtkmipsel/packages/base/ppp-mod-pppoe_2.4.7-2_rtkmipsel.ipk
+Size: 10094
+MD5Sum: 44c9ec2330ffb50272e19bce385bea1c
+SHA256sum: dd17da6eff68896af8cfbb4602a39293008d68fd43852e630324b99e3b20b4d3
+Description:  This package contains a PPPoE (PPP over Ethernet) plugin for ppp.
+
+Package: ppp-mod-pppol2tp
+Version: 2.4.7-2
+Depends: libc, kmod-pppol2tp
+Source: package/network/services/ppp
+Section: net
+Maintainer: Jo-Philipp Wich <xm@subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 4506
+Filename: bin/rtkmipsel/packages/base/ppp-mod-pppol2tp_2.4.7-2_rtkmipsel.ipk
+Size: 5072
+MD5Sum: 691073dcbac593e9143918e2c1e81eb2
+SHA256sum: dd705de3c7f79d094ddae40fc273a6be5d9ee19ed90cf31b0ba3a03df3d0eb15
+Description:  This package contains a PPPoL2TP (PPP over L2TP) plugin for ppp.
+
+Package: ppp-mod-pptp
+Version: 2.4.7-2
+Depends: libc, kmod-pptp, kmod-mppe, resolveip
+Source: package/network/services/ppp
+Section: net
+Maintainer: Jo-Philipp Wich <xm@subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 16098
+Filename: bin/rtkmipsel/packages/base/ppp-mod-pptp_2.4.7-2_rtkmipsel.ipk
+Size: 16600
+MD5Sum: ad254c20d8fe3e487a06f9abf924f8a6
+SHA256sum: ae9873269820a9ab98f416d68926b1516b8cbe5e0c2bce40e07512963279fffa
+Description:  This package contains a PPtP plugin for ppp.
+
+Package: ppp
+Version: 2.4.7-2
+Depends: libc, kmod-ppp
+Source: package/network/services/ppp
+Section: net
+Maintainer: Jo-Philipp Wich <xm@subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 106342
+Filename: bin/rtkmipsel/packages/base/ppp_2.4.7-2_rtkmipsel.ipk
+Size: 106943
+MD5Sum: 62a4e2808e8f6ac5e4d25bec7538d057
+SHA256sum: ee993f52d89df0f19bb8d08666979a75aa53902db6162b7ad1236c5ab4063158
+Description:  This package contains the PPP (Point-to-Point Protocol) daemon.
+
+Package: procd
+Version: 2014-09-15-c1a558f7d0c1e6c1ffa5a47d557a7b45205eef1d
+Depends: libc, ubusd, ubus, libjson-script, ubox, libubox, libubus
+Source: package/system/procd
+License: GPLv2
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 33524
+Filename: bin/rtkmipsel/packages/base/procd_2014-09-15-c1a558f7d0c1e6c1ffa5a47d557a7b45205eef1d_rtkmipsel.ipk
+Size: 34046
+MD5Sum: ab15456b1856b700d14fad11f4dae5f0
+SHA256sum: d0b1cebe0ad32e6e1edcb1a3792b3ca89847dd05edac85177de77491ec77bcc3
+Description:  OpenWrt system process manager
+
+Package: qos-scripts
+Version: 1.2.1-6
+Depends: libc, tc, kmod-sched-core, kmod-sched-connmark, kmod-ifb, iptables, iptables-mod-filter, iptables-mod-ipopt, iptables-mod-conntrack-extra
+Source: package/network/config/qos-scripts
+Section: utils
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: all
+Installed-Size: 6419
+Filename: bin/rtkmipsel/packages/base/qos-scripts_1.2.1-6_all.ipk
+Size: 7117
+MD5Sum: a27b1ce05317faf316cc82aac5edf998
+SHA256sum: a17e87a8bcd50bab2fb1aa31d3ee41cd3deca476b949127d882460ef9142103f
+Description:  A set of scripts that abstract QoS configuration into a simple 
+ configuration file supporting stanzas that specify any number of QoS 
+ entries.
+
+Package: resolveip
+Version: 2
+Depends: libc
+Source: package/network/utils/resolveip
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 1867
+Filename: bin/rtkmipsel/packages/base/resolveip_2_rtkmipsel.ipk
+Size: 2572
+MD5Sum: dd0ba19af62bbbc3502f15b224dcb0bc
+SHA256sum: 0c719c583e1398ced8fc4915c17f8a0a0f4c79582bd41518b45eca9bee9b5d5f
+Description:  This package contains the small resolveip utility which
+ can be used by scripts to turn host names into numeric
+ IP addresses. It supports IPv4 and IPv6 resolving and
+ has a configurable timeout to guarantee a certain maximum
+ runtime in case of slow or defunct DNS servers.
+
+Package: rpcd-mod-file
+Version: 2014-07-04-7fd4564b8acb60254817cb341b84c6468c8c6440
+Depends: libc, libubus, libubox, rpcd
+Source: package/system/rpcd
+License: ISC
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 5236
+Filename: bin/rtkmipsel/packages/base/rpcd-mod-file_2014-07-04-7fd4564b8acb60254817cb341b84c6468c8c6440_rtkmipsel.ipk
+Size: 5840
+MD5Sum: c80e83adc7eca9e2a17800a207d50fd1
+SHA256sum: a6c391b8f2e9958cbf652d7f08cadda5b5afa98dcc7d3ac80fc5a4c2141e50c5
+Description:  Provides ubus calls for file and directory operations.
+
+Package: rpcd-mod-iwinfo
+Version: 2014-07-04-7fd4564b8acb60254817cb341b84c6468c8c6440
+Depends: libc, libubus, libubox, rpcd, libiwinfo
+Source: package/system/rpcd
+License: ISC
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 5404
+Filename: bin/rtkmipsel/packages/base/rpcd-mod-iwinfo_2014-07-04-7fd4564b8acb60254817cb341b84c6468c8c6440_rtkmipsel.ipk
+Size: 6016
+MD5Sum: f76a2e496a5ee1300e93dfebe7720e03
+SHA256sum: 0c1a016f95dda872d1b0becddc78ddc301d3e40c8c45bd7e22f054a554b3fa10
+Description:  Provides ubus calls for accessing iwinfo data.
+
+Package: rpcd
+Version: 2014-07-04-7fd4564b8acb60254817cb341b84c6468c8c6440
+Depends: libc, libubus, libubox, libuci, libblobmsg-json
+Source: package/system/rpcd
+License: ISC
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 18436
+Filename: bin/rtkmipsel/packages/base/rpcd_2014-07-04-7fd4564b8acb60254817cb341b84c6468c8c6440_rtkmipsel.ipk
+Size: 19088
+MD5Sum: 61eff553c98a641c0562bec185ceea00
+SHA256sum: a02db963c8d637354699c0862c0dd26b1dbe57cb71d4edbe897bd92d8f23874b
+Description:  This package provides the UBUS RPC backend server to expose various
+ functionality to frontend programs via JSON-RPC.
+
+Package: rtk_app
+Version: 0.1-1
+Depends: libc, libpcap
+Source: package/utils/rtk_app
+Section: Tool
+Architecture: rtkmipsel
+Installed-Size: 171726
+Filename: bin/rtkmipsel/packages/base/rtk_app_0.1-1_rtkmipsel.ipk
+Size: 172121
+MD5Sum: 6459e5052614b086815a746176772e82
+SHA256sum: 78cab0939fe5cba41626bf1351a92f68f13db54c4d537661288a719424a486d9
+Description:  This Package is for realtek to set WLAN TX calibration parameters 
+
+Package: tc
+Version: 3.15.0-1
+Depends: libc, kmod-sched-core
+Source: package/network/utils/iproute2
+Section: net
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: rtkmipsel
+Installed-Size: 91949
+Filename: bin/rtkmipsel/packages/base/tc_3.15.0-1_rtkmipsel.ipk
+Size: 92551
+MD5Sum: 397fa1e3a15684eae0222a5266793c0a
+SHA256sum: b3bd18bedb869200847167f24f3a53eceb8ba926498b6af3deed24d3f88516d6
+Description:  Traffic control utility
+
+Package: ubox
+Version: 2014-09-16-5c45b560bc8c9e13682269ed963a8a4a65959518
+Depends: libc, libubox, ubusd, ubus, libubus, libuci
+Source: package/system/ubox
+License: GPLv2
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 23319
+Filename: bin/rtkmipsel/packages/base/ubox_2014-09-16-5c45b560bc8c9e13682269ed963a8a4a65959518_rtkmipsel.ipk
+Size: 23897
+MD5Sum: 51ea797cfef95457e5ad765ee9efc6f4
+SHA256sum: 2cef73b88dbfa1ca85ff0926a6cb6a3b16cbc1466eb0e7b39932054bdeadc575
+Description:  OpenWrt system helper toolbox
+
+Package: ubus
+Version: 2014-09-17-4c4f35cf2230d70b9ddd87638ca911e8a563f2f3
+Depends: libc, libubus, libblobmsg-json, ubusd
+Source: package/system/ubus
+License: LGPLv2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 4089
+Filename: bin/rtkmipsel/packages/base/ubus_2014-09-17-4c4f35cf2230d70b9ddd87638ca911e8a563f2f3_rtkmipsel.ipk
+Size: 4674
+MD5Sum: b3c06e4ef7a0c6a727a41a52c71a4eae
+SHA256sum: cc31f8d3b0c04a7fe796561797923d9a445049ea4ce9e78c2a1b617d07a4a650
+Description:  OpenWrt RPC client utility
+
+Package: ubusd
+Version: 2014-09-17-4c4f35cf2230d70b9ddd87638ca911e8a563f2f3
+Depends: libc, libubox
+Source: package/system/ubus
+License: LGPLv2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 7626
+Filename: bin/rtkmipsel/packages/base/ubusd_2014-09-17-4c4f35cf2230d70b9ddd87638ca911e8a563f2f3_rtkmipsel.ipk
+Size: 8249
+MD5Sum: 1030e0d08cd8deb120aad1fa5df3b771
+SHA256sum: 96466a4e1c039634d806b56707061a72efada60cb0d9b1acd829c6beab1d7dad
+Description:  OpenWrt RPC daemon
+
+Package: uci
+Version: 2014-04-11.1-1
+Depends: libc, libuci
+Source: package/system/uci
+License: LGPLv2.1 GPLv2
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 6837
+Filename: bin/rtkmipsel/packages/base/uci_2014-04-11.1-1_rtkmipsel.ipk
+Size: 7469
+MD5Sum: fc58ea64d85f1bcc52277d368b3b5043
+SHA256sum: dbcda95f59ec33a703259733579df7d6e161b0bf92fd0535236cd0cedd49e071
+Description:  Utility for the Unified Configuration Interface (UCI)
+
+Package: uhttpd-mod-ubus
+Version: 2014-08-25-dabd7dea6445aaa0e5b8d9add1872fa7393b3a85
+Depends: libc, uhttpd, libubus, libblobmsg-json
+Source: package/network/services/uhttpd
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 5967
+Filename: bin/rtkmipsel/packages/base/uhttpd-mod-ubus_2014-08-25-dabd7dea6445aaa0e5b8d9add1872fa7393b3a85_rtkmipsel.ipk
+Size: 6627
+MD5Sum: 90342dc4eedd28be2264fd1d0eef12d5
+SHA256sum: 3b15a827716e92b30248c4da93d5881c6b17d31b692aac5fd5b803d271db2fc9
+Description:  The ubus plugin adds a HTTP/JSON RPC proxy for ubus and publishes the
+ session.* namespace and procedures.
+
+Package: uhttpd
+Version: 2014-08-25-dabd7dea6445aaa0e5b8d9add1872fa7393b3a85
+Depends: libc, libubox
+Source: package/network/services/uhttpd
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 20973
+Filename: bin/rtkmipsel/packages/base/uhttpd_2014-08-25-dabd7dea6445aaa0e5b8d9add1872fa7393b3a85_rtkmipsel.ipk
+Size: 21645
+MD5Sum: 6c6cee5c93d3f3b97adfd697635d27c8
+SHA256sum: 1d23444f6cad7ff18b0e2af75e1a15ee062805849344307262e11f6a592e5772
+Description:  uHTTPd is a tiny single threaded HTTP server with TLS, CGI and Lua
+ support. It is intended as a drop-in replacement for the Busybox
+ HTTP daemon.
+
+Package: wireless-tools
+Version: 29-5
+Depends: libc
+Source: package/network/utils/wireless-tools
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 22515
+Filename: bin/rtkmipsel/packages/base/wireless-tools_29-5_rtkmipsel.ipk
+Size: 23074
+MD5Sum: 8b924c3187ffe9585c77ff1459eb6122
+SHA256sum: eda6b715427c73cc797a30e783682424701cb1192f5c97da8d2575699a98ea9d
+Description:  This package contains a collection of tools for configuring wireless
+ adapters implementing the "Linux Wireless Extensions".
+
+Package: wpa-cli
+Version: 2014-06-03.1-1
+Depends: libc
+Source: package/network/services/hostapd
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 27171
+Filename: bin/rtkmipsel/packages/base/wpa-cli_2014-06-03.1-1_rtkmipsel.ipk
+Size: 27774
+MD5Sum: 1c94a41ecaf6142cdbd6b211c39ec992
+SHA256sum: a3c18c715a4a10382ce265d63f9628594e735df15ba6d9fb16c4cba5d188a851
+Description:  WPA Supplicant command line interface
+
+Package: wpad
+Version: 2014-06-03.1-1
+Depends: libc, libnl-tiny, libubus
+Source: package/network/services/hostapd
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: rtkmipsel
+Installed-Size: 364595
+Filename: bin/rtkmipsel/packages/base/wpad_2014-06-03.1-1_rtkmipsel.ipk
+Size: 364720
+MD5Sum: afcf515e42f5f1d12034b90a7d5a75f1
+SHA256sum: 1b120ce69ca8733407f7d6e21a1644ec586bd025419159d910427514c819a720
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator and Supplicant
+
+Package: luci-app-firewall
+Version: 0.12+git-16.038.38474-0d510b2-1
+Depends: libc, firewall
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 63459
+Filename: bin/rtkmipsel/packages/luci/luci-app-firewall_0.12+git-16.038.38474-0d510b2-1_rtkmipsel.ipk
+Size: 64133
+MD5Sum: ef37e2a3ef218e2356ee1b1b6b102362
+SHA256sum: 96844ace019eb2ab1f5e79a78a84f95effe1ef974a6a2bf738bcefd421cb88a1
+Description:  Firewall and Portforwarding application
+
+Package: luci-base
+Version: 0.12+git-16.038.38474-0d510b2-1
+Depends: libc, lua, libuci-lua, libubus-lua
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 141394
+Filename: bin/rtkmipsel/packages/luci/luci-base_0.12+git-16.038.38474-0d510b2-1_rtkmipsel.ipk
+Size: 142132
+MD5Sum: d0178cbd045e6cd6731f3bad7a49e7e6
+SHA256sum: a9dbb4cf423fc08836f21d3bf33e32025a904ed9c4d5e913479fd9f1de0e5fa5
+Description:  LuCI core libraries
+
+Package: luci-i18n-english
+Version: 0.12+git-16.038.38474-0d510b2-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 773
+Filename: bin/rtkmipsel/packages/luci/luci-i18n-english_0.12+git-16.038.38474-0d510b2-1_rtkmipsel.ipk
+Size: 1485
+MD5Sum: ec32cadaf975f517b42aa25ef0cbbd2c
+SHA256sum: d120c3be0198959d61b55de7e01836c91bcd336d2b22ccb363726d0f30f7bee2
+Description:  English
+
+Package: luci-i18n-russian
+Version: 0.12+git-16.038.38474-0d510b2-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 24425
+Filename: bin/rtkmipsel/packages/luci/luci-i18n-russian_0.12+git-16.038.38474-0d510b2-1_rtkmipsel.ipk
+Size: 25158
+MD5Sum: f1802cf00b86ade1623a55cb260e7ec1
+SHA256sum: 839ef6174923aa9c5e5b8f8bb9608b10b6915f387fa067918ef3e01dd800c675
+Description:  Russian (by Skryabin Dmitry)
+
+Package: luci-lib-nixio
+Version: 0.12+git-16.038.38474-0d510b2-1
+Depends: libc, luci-base
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 29583
+Filename: bin/rtkmipsel/packages/luci/luci-lib-nixio_0.12+git-16.038.38474-0d510b2-1_rtkmipsel.ipk
+Size: 30075
+MD5Sum: 1dfb1471cd92eae7d497b94b43f646f3
+SHA256sum: 7df12841f0e33773eca378fe4d368bd3feb0d0b3d7ca3aa8e167e67a5eb1fac3
+Description:  NIXIO POSIX library
+
+Package: luci-mod-admin-full
+Version: 0.12+git-16.038.38474-0d510b2-1
+Depends: libc, luci-base
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 68187
+Filename: bin/rtkmipsel/packages/luci/luci-mod-admin-full_0.12+git-16.038.38474-0d510b2-1_rtkmipsel.ipk
+Size: 68909
+MD5Sum: ec53880aba1fa1d5bdae2796934b4052
+SHA256sum: ffc6bf1a4517caf57f63e7f36e93f60be1268b9b549d3c7b0eae4979054dc374
+Description:  LuCI Administration - full-featured for full control
+
+Package: luci-proto-ppp
+Version: 0.12+git-16.038.38474-0d510b2-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 2979
+Filename: bin/rtkmipsel/packages/luci/luci-proto-ppp_0.12+git-16.038.38474-0d510b2-1_rtkmipsel.ipk
+Size: 3585
+MD5Sum: 4638b5882a708d5fb88c4eb2565f30c4
+SHA256sum: 27e798c09f82e352d046a206b8e9d90bec74b6f3de53735a907dc77b1c4ca9a2
+Description:  Support for PPP/PPPoE/PPPoA/PPtP
+
+Package: luci-theme-bootstrap
+Version: 0.12+git-16.038.38474-0d510b2-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 12953
+Filename: bin/rtkmipsel/packages/luci/luci-theme-bootstrap_0.12+git-16.038.38474-0d510b2-1_rtkmipsel.ipk
+Size: 13640
+MD5Sum: 753ec1fc50cda88c6d7f2c97e74f48be
+SHA256sum: 19718d6694338135a6f3309126c0a013d35e6e45a321081e6d7ae7e94ff77d0f
+Description:  Bootstrap Theme (default)
+
+Package: luci-theme-openwrt
+Version: 0.12+git-16.038.38474-0d510b2-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 6923
+Filename: bin/rtkmipsel/packages/luci/luci-theme-openwrt_0.12+git-16.038.38474-0d510b2-1_rtkmipsel.ipk
+Size: 7679
+MD5Sum: e7d69b4e518a702ca3cb0515964a5eb2
+SHA256sum: c8459a99dee4c2478504b18f169142b62ac1ab879a9b56e04c5adc311d710cfa
+Description:  OpenWrt.org
+
+Package: luci
+Version: 0.12+git-16.038.38474-0d510b2-1
+Depends: libc, uhttpd, uhttpd-mod-ubus, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-proto-ppp, libiwinfo-lua, luci-lib-nixio
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: rtkmipsel
+Installed-Size: 105
+Filename: bin/rtkmipsel/packages/luci/luci_0.12+git-16.038.38474-0d510b2-1_rtkmipsel.ipk
+Size: 783
+MD5Sum: 1b5daac28d6c2f47b3f4ea5375003961
+SHA256sum: a46ea850f9494ab19302e602c5c23948edff702da39b03fcac2bc517c16fc5fe
+Description:  Standard OpenWrt set including full admin with ppp support and the default OpenWrt theme
+
